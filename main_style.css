@@ -1,0 +1,130 @@
+header{
+    box-sizing: content-box;
+    height: 7%;
+    background-color: #00000078;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header_img{
+    box-sizing: content-box;
+    height: 95%;
+    width: auto; 
+    position: absolute;
+    left: calc(50% - 65px);
+    top: 3px;
+}
+
+body{
+    background-color: black;
+    overflow:hidden
+}
+
+.content{
+    box-sizing: content-box;
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 27.5%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    cursor: default;
+}
+
+
+.The_Lucid_Collective:hover{
+    transition-timing-function: ease;
+    transition: 2s 0.1s;
+    filter: invert(100%);
+    margin-top: -1.2%;
+    height: 110%;
+}
+
+.The_Lucid_Collective{
+    transition: all 1.6s;
+}
+
+.Relentless_Mutation:hover{
+    transition-timing-function: ease;
+    transition: 2s 0.1s;
+    filter: invert(100%);
+    margin-top: -1.2%;
+    height: 110%;  
+}
+
+.Relentless_Mutation{
+    transition: all 1.6s;
+}
+
+.Bleed_the_Future:hover{
+    transition-timing-function: ease;
+    transition: 2s 0.1s;
+    filter: invert(100%);
+    margin-top: -1.2%;
+    height: 110%; 
+}
+
+.Bleed_the_Future{
+    transition: all 1.6s;
+}
+
+.bacground{
+    box-sizing: content-box;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    left: 0; 
+    top: -12%;
+    filter: blur(8px) contrast(95%);
+}
+
+.video{
+    width: max-content;
+    height: max-content;
+}
+
+footer{
+    box-sizing: content-box;
+    height: 7%;
+    background-color: #00000078;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+}
+
+.footer_crt{
+    box-sizing: content-box;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 15%;
+    right: 4%;
+    font-family: fantasy;
+    font-size: medium;
+}
+
+@keyframes animation_year {
+    from{
+        color: rgb(203, 203, 203);
+    }
+    to{
+        color: gray;
+    }
+}
+.footer_year{
+    color: gray;
+    position: absolute;
+    top: 15%;
+    left: 96%;
+    font-family: fantasy;
+    font-size: small;
+    animation-name: animation_year;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,205 @@
+header{
+    box-sizing: content-box;
+    height: 7%;
+    background-color: #00000078;
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header_img{
+    box-sizing: content-box;
+    height: 95%;
+    width: auto; 
+    position: absolute;
+    left: 10px;
+    top: 3px;
+}
+
+.alb_link{
+    box-sizing: content-box;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.alb_link_1:hover{
+    background-color: rgba(163, 0, 0, 0.55);
+    transition-timing-function: ease-in-out;
+    transition: 2s 0.3s;
+}
+
+.alb_link_1{
+    box-sizing: content-box;
+    width: 20%;
+    transition: 0.3s 0.1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Century Gothic;
+    font-size: large;
+}
+
+.link_1:hover{
+    transition-timing-function:ease-in;
+    transition: 1s 0.3s;
+    margin-top: 12px;
+}
+
+.link_1{
+    transition: 0.3s 0.1s;
+}
+
+body{
+    background-color: black;
+    overflow:hidden
+}
+
+a{
+    cursor: default;
+}
+
+.bacground{
+    box-sizing: content-box;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    left: 0; 
+    top: -12%;
+    filter: blur(5px);
+}
+
+.video{
+    width: max-content;
+    height: max-content;
+}
+
+@keyframes album_animation{
+    from{
+        filter: invert(100%);
+    }
+    to{
+        filter: invert(0%);
+    }
+}
+
+@keyframes vinyl_animation{
+    from{
+        margin-right: 0%;
+    }
+    to{
+        margin-right: 20%;
+    }
+}
+
+@keyframes appearance{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.alb_img{
+    box-sizing: content-box;
+    height: 80%;
+    width: fit-content;
+    position: absolute;
+    top: 13.5%;
+    right: 3%;
+    z-index: 1;
+    animation-name: album_animation;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.vinyl_img{
+    box-sizing: content-box;
+    height: 109%;
+    width: fit-content;
+    position: absolute;
+    top: -4.5%;
+    right: -4.5%;
+    z-index: -1;
+    animation-name: vinyl_animation;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.alb_name{
+    box-sizing: content-box;
+    color: rgba(172, 172, 172, 0.875);
+    font-family: fantasy;
+    font-size: medium;
+    position: absolute;
+    bottom: -6%;
+    right: 10%;
+    opacity: 0;
+    animation-name: appearance;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+}
+
+.year{
+    box-sizing: content-box;
+    color: rgba(255, 255, 255, 0.784);
+    font-family: fantasy;
+    font-size: medium;
+    position: absolute;
+    bottom: -6%;
+    left: calc(90% + 2px);
+    opacity: 0;
+    animation-name: appearance;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.content{
+    box-sizing: content-box;
+    height: 93%;
+    width: 50%;
+    position: absolute;
+    top: 7%;
+    left: 0;
+}
+
+.link:hover{
+    box-sizing: content-box;
+    width: 100%;
+    height: 200%;
+    transition-timing-function: ease;
+    transition: 1.5s;
+    background-color: rgba(163, 0, 0, 0.55);
+    border-radius: 10px;
+}
+
+.link{
+    box-sizing: content-box;
+    height: 120%;
+    font-family: Century Gothic;
+    font-size: 30px;
+    transition-timing-function: ease-in;
+    transition: 0.3s 0.1s;
+    line-height: 50px;
+    text-align: center;
+    opacity: 0;
+    animation-name: appearance;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+    animation-delay: 2.3s;
+    text-shadow: 1px 1px 1px #000;
+}
+
+a{
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
